@@ -1,0 +1,39 @@
+#+TITLE: Probability 2
+- Recap: probability foundations
+  - Mathematical foundations of the probability theory rely on a
+    two-step approach to describing events to which we assign
+    probabilities:
+    - *Sample Space* is the set of all possible outcomes of an experiment. Examples:
+      - when tossing a coin, the sample space is $\{H,T\}$
+      - rolling a die: $\{1,2,3,4,5,6\}$
+      - tossing two coins: $\(H,H),(H,T),(T,H),(T,T)\}$
+      - measuring the lifetime of a car engine: the sample space is $[0,\infty)$
+    - *Event space* is a set of subsets of the sample space, where we
+      choose what events are relevant purposes of our model. Examples:
+      - tossing a coin: we have a choice of contructing event space as
+        simply $\{\emptyset,\{H,T\}\}$ --- meaning ``coin was tossed
+        (with the outcome of heads, or tails, but I don't care which",
+        or not (the empty set). More commonly, we have in mind the
+        event space $\{\emptyset, \{H\}, \{T\}, \{H,T\}\}$ --- which
+        distinguishes the event 'heads' from event 'tails'.
+      - measuring the lifetime of a car engine: we can set up an event
+        space $\{\emptyset, [0,10), [10,\infty), [0,\infty)\},
+        corresponding to events ``engine lives to the warranty
+        lifetime of 10, or not".
+      - Note that we always include the empty set (nothing happens)
+        and the entire sample space (something happens). Moreover,
+        when we construct the event space, we require that the
+        complement of an event $A$ is also an allowable event ($A$
+        does not happen), and so are union ($A$ or $B$ happen) and
+        intersection (both $A$ and $B$ happen) of two events $A$ and
+        $B$.
+      - For most examples here, we can take the event space to be the
+        /power set/ of the sample space - i.e., any subset of the
+        sample space is an allowable event. This is not always
+        possible for infinite sample spaces --- and the reasons why
+        are the main reason why we insist on separating the concepts
+        of sample and event spaces.
+      - Exercises:
+        - write down the event space for tossing two coins, if we
+          don't care which order heads and tails come up.
+          - Answer: e.g. $\{\emptyset,\{H\},\{T\},\{H,T\}\}$
