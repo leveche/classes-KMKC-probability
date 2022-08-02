@@ -37,3 +37,27 @@
         - write down the event space for tossing two coins, if we
           don't care which order heads and tails come up.
           - Answer: e.g. $\{\emptyset,\{H\},\{T\},\{H,T\}\}$
+- Random walk on a Grid
+  - My friend and I just realized we are both visiting the city of
+    Mathville, but are staying at different hotels. My hotel is $n=10$
+    blocks to the East and $n=10$ blocks to the South of my
+    friend's. We agreed to meet but forgot to specify where. We both
+    leave our hotels at the same time in the morning. At each
+    intersection, I decide, with equal probability, to continue North
+    or East, while my friend decides, also with equal probability, to
+    continue South or West at each intersection. We walk with the same
+    speed.
+    - What is the probability that we meet?
+      - With even number of blocks in both directions, we can only
+        meet on an intersection. We would have to have walked the same
+        distance, so the 10 possible meeting places are the grid
+        points on the diagonal of the $10\times10$ square. We now need
+        to count how many ways there are to arrive at each of them.
+        - endpoints $(10,0)$ and $(0,10)$: only one way
+        - $(1,9)$: 10 ways, since there are 10 chances for me to turn
+          North. Similarly for $(9,1)$.
+        - $(i,j)$: the binomial coefficient ${{10}\choose{i}}$ Note
+          that this is the same as ${{10}\choose{j}}$, and $i+j=10$.
+    - Now suppose I leave my hotel $k=4$ minutes late. What is the
+      probability that we meet now?
+    - If $n=1$ and $k=1$, what is the probability of us meeting?
