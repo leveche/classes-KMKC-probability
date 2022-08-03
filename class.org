@@ -61,3 +61,12 @@
     - Now suppose I leave my hotel $k=4$ minutes late. What is the
       probability that we meet now?
     - If $n=1$ and $k=1$, what is the probability of us meeting?
+- joint & marginal probabilities
+- Bayes' theorem
+- decision trees
+- Binomial distribution
+- Geometric Distribution
+- means and variance
+- mean vs median
+  - salaries/lottery
+- inclusion/exclusion principle
