@@ -70,3 +70,45 @@
 - mean vs median
   - salaries/lottery
 - inclusion/exclusion principle
+- Unfair Coin
+  - Suppose we toss an unfair coin which comes up heads with
+    probability $p=0.45<\frac{1}{2}$. Your friend says that you can
+    only bet on heads, and the winner is the one who has greater score
+    at the end of several rounds. He will let you choose the number of
+    rounds, as long as it's even. What number should you choose?
+  - Since each round is stacked against you, the best option would be
+    to play as few rounds as possible. The next consideration is that
+    with even number of rounds, there's a possibility of a draw.
+- keyring
+  - I have 20 keys on my keyring. I came home late last night, and
+    discovered that the light bulb over my door in not working.
+    - If I start going through the keys, each time trying one that I
+      have not tried before, what is the probability of finding the
+      correct key on the 4th attempt?
+      - p(correct key on n^{th} attempt)
+          = p(previous attempts didn't work) $\times \frac{1}{K-n}
+          = \left(1-\frac{1}{K}\right)\mdots\left(1-\frac{1}{K-(n-1)}\right)\cdot\frac{1}{K-n}
+          = \frac{(K-1)(K-2)\mdots(K-n)}{K(K-1)(K-2)\mdots(K-n)}=\frac{1}{K}$
+        - Should we be surprised by the answer of $\frac{1}{K}$ for any
+          of the first $K$ attempts? Shouldn't we expect to find the
+          right key with a higher probability towards the end of the
+          process, when the keyring is almost exhausted? Why yes, the
+          probability of finding the right key grows the smaller the
+          keyring gets, but /so does the probability of already found
+          the right key in previous attempts/.
+        - Another way of thinking about this is: if we arrange the keys
+          in a row, the correct one will be in any given position with
+          probability $\frac{1}{K}$ - and this corresponds exactly to
+          trying the keys one-by-one without replacement.
+    - What if now, at each attempt, I choose a random key from the
+      entire keyring, including the ones I already tried?
+      - Again, $p({\rm correct key on }n^{th}{\rm attempt})
+         = p({\rm previous attempts didn't work}) \times \frac{1}{K}
+         = \left(1-\frac{1}{K}\right)^{n-1} \frac{1}{K}$
+        - As a sanity check, let's verify that the probabilities add up to one:
+          $\frac{1}{K}\times\sum_{n=0}^\infty \left(1-\frac{1}{K}\right)^{n}
+            = \frac{K-1}{K} \frac{1}{1-1+\frac{1}{K}} = 1$
+    - Finally, what if I'm choosing from the entire keyring, except
+      the one key I have just tried?
+      - $p = \left(1-\frac{1}{K-1}\right)^{n-1}\frac{1}{K-1}$
+      - Just need to be careful with 'edge cases' of K=1 and K=2
