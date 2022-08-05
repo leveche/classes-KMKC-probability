@@ -112,3 +112,22 @@
       the one key I have just tried?
       - $p = \left(1-\frac{1}{K-1}\right)^{n-1}\frac{1}{K-1}$
       - Just need to be careful with 'edge cases' of K=1 and K=2
+- The X Factor
+  - In a popular math TV show, contestants solve a difficult
+    mathematical problem, and each of the three maths professors on
+    the panel either agrees or disagrees with the solution. A
+    professor has probability $p$ of being correct in their
+    evaluation. The final decision is given by the majority of the
+    votes. One day, a panel member was sick, and the show management
+    needed to decide whether to have an actor fill in --- who then
+    would secretly toss a fair coin to give his verdict; or (to avoid
+    a tie) reduce the panel to only one professor. Which method would
+    be fairer?
+  - Suppose we hire an artist to replace the professor.  The
+    remaining two professors give correct judgement with probability
+    $p^2$, in which case the artist's vote is irrelevant. If the
+    professors' decisions are split, the panel would be correct with
+    probability[fn::the first factor of 2 because either professor
+    could be right] $2\timesp(1-p)\frac{1}{2}$. The total
+    probability of the panel being correct is $p^2 + p(1-p) = p$ ---
+    same as a single professor, but much more entertaining.
