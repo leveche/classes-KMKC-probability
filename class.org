@@ -131,3 +131,18 @@
     could be right] $2\timesp(1-p)\frac{1}{2}$. The total
     probability of the panel being correct is $p^2 + p(1-p) = p$ ---
     same as a single professor, but much more entertaining.
+- Fermat Theorem
+  - Suppose we have two urns, each filled with the same total number
+    of black and white balls. We sample with replacement some number
+    $n$ of balls from each urn. Can you find $n$ and the total
+    number of the balls in each urn if we are given that the
+    probability of all white balls being sampled from the first urn
+    is the same as the probability of either all white or all black
+    balls being sampled from the second urn?
+    - if the number of white balls in the first urn is $x$, and the
+      second urn contains $y$ white balls and $z$ black balls, then
+      we have $$\left(\frac{x}{y+z}\right)^n =
+      \left(\frac{y}{y+z}\right)^n + \left(\frac{z}{y+z}\right)^n$$,
+      or $x^n = y^n + z^n$ for integer $x,y,z$, and $n$. For $n=2$
+      the solutions are the so-called Pythagorean triples, such as
+      e.g. $z=5,y=4,z=3$. What can you say about the case $n=1$?
